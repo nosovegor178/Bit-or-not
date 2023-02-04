@@ -55,4 +55,4 @@ if __name__ == '__main__':
     if is_bitlink(url, api_key):
         print('Эта ссылка уже битлинк. Всего нажатий: {}'.format(count_clicks(api_key, url)))
     else:
-        print('Ссылка сокращена: {}'.format(shorten_link(api_key, args.link)))
+        print('Ссылка сокращена. Это битлинк: {}'.format(shorten_link(api_key, args.link)))
