@@ -47,7 +47,7 @@ if __name__ == '__main__':
     parser.add_argument('link', help='Ссылка для сокращения или битлинк')
     args = parser.parse_args()
 
-    api_key = '0285a5d9b1374005cbdb28192cf6f02f497b3dd4'
+    api_key = BITLY_API_KEY
     parsed_url = urlparse(args.link)
     url = '{0}{1}'.format(parsed_url.netloc, parsed_url.path)
     
